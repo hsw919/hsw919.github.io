@@ -1,0 +1,196 @@
+/************ GENERAL ************/
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+  background: grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+header,
+.about,
+.portfolio,
+.contact, 
+footer {
+ box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2); 
+}
+
+/************ HEADER ************/
+
+header {
+  background: DeepSkyBlue;
+  color: white;
+  padding: 15px;
+}
+
+header h2 {
+  margin: 0;
+  font-size: 48px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+header a {
+  color: white;
+  padding: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header a:hover {
+  background: grey;
+}
+
+.header-contain {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/************ ABOUT ************/
+
+.about {
+  background: #afafaf;
+  color: white;
+  font-size: 20px;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+  overflow: auto;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+.me {
+  width: 150px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.skills {
+  width: 60%;
+  float: left;
+}
+
+.photo {
+  width: 40%;
+  float: right;
+}
+
+/************ PORTFOLIO ************/
+
+.portfolio {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  background: white;
+  padding: 50px;
+  color: grey;
+}
+
+.tribute {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-family: 'Exo', sans-serif;
+}
+
+/************ CONTACT ************/
+
+.contact {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  background: white;
+  padding: 50px;
+  margin-top: 1px;
+  color: grey;
+  font-size: 20px;
+}
+
+.contact h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  font-family: 'Exo', sans-serif;
+}
+
+#twitter {
+  background: #0084b4;
+  color: white;
+  padding: 10px;
+  border-radius: 25%;
+}
+
+#email {
+  background: grey;
+  color: white;
+  padding: 10px;
+  border-radius: 25%;
+}
+
+/************ FOOTER ************/
+
+footer {
+  background: DeepSkyBlue;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+/************ MEDIA QUERY ************/
+
+@media (max-width: 764px) {
+  header a {
+    display: inline-block;
+  }
+  
+  .skills {
+    float: none;
+    width: 100%;
+  }
+  
+  .photo {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (max-width: 394px) {
+  header h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 364px) {
+  header a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  header a {
+    font-size: 11px;
+  }
+  
+  header h2 {
+    font-size: 35px;
+  }
+}
